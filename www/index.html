@@ -1,0 +1,53 @@
+
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1565c0">
+  <title>Aplikasi Saya</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #222;
+      background: #f5f7fb;
+    }
+    header {
+      padding: 16px;
+      color: white;
+      background: #1565c0;
+      font-weight: bold;
+    }
+    main { padding: 24px 16px; text-align: center; }
+    a {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 12px 18px;
+      color: white;
+      background: #1565c0;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>Aplikasi Saya</header>
+  <main>
+    <p>Membuka aplikasi Google Apps Script...</p>
+    <a id="openApp" href="#">Buka aplikasi</a>
+  </main>
+
+  <script>
+    const APP_URL =
+      "https://script.google.com/macros/s/AKfycby54bd2z6FJWGrrZFhxc3IOJpofQOV1Rc_1ZP-zaASifqCbBXD6-I0EftT_7ZVE48a9Cw/exec?id=KDL-20261021-013";
+
+    document.getElementById("openApp").href = APP_URL;
+
+    // Arahkan WebView ke aplikasi Apps Script.
+    window.location.replace(APP_URL);
+  </script>
+</body>
+</html>
